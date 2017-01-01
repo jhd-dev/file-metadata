@@ -5,7 +5,7 @@ var multer = require("multer");
 var upload = multer({
     dest: path.join(__dirname, 'temp')
 });
-var port = process.env.port || 8080;
+var port = process.env.PORT || 8080;
 
 var app = express();
 app.use('/upload', express.static(path.join(__dirname, 'public')));

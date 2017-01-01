@@ -1,0 +1,25 @@
+{
+  "name": "file-metadata",
+  "version": "1.0.0",
+  "description": "a microservice that returns the size of an uploaded file",
+  "main": "app.js",
+  "start": "node app.js",
+  "scripts": {
+    "start": "node app.js",
+    "test": "node test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/porygonj/file-metadata.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/porygonj/file-metadata/issues"
+  },
+  "homepage": "https://github.com/porygonj/file-metadata#readme",
+  "dependencies": {
+    "express": "^4.14.0",
+    "multer": "^1.2.1"
+  }
+}

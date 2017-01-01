@@ -1,12 +1,17 @@
 <!DOCTYPE html>
 <html>
     <head>
-        
+        <link rel="stylesheet" href="./css/style.css" type="text/css" />
     </head>
     <body>
-        <form id="file-upload" action="https://file-metadata-porygonj.c9users.io/submit" method="post" enctype="multipart/form-data">
-            <input type="file" name="file" />
-            <input type="submit" value="Submit" />
-        </form>
+        <div id="wrapper">
+            <h1 class="head-main">File Metadata Microservice</h1>
+            <p class="description">Upload a file to recieve a JSON with its filesize (in bytes).</p>
+            <form class="file-upload" action="https://file-metadata-porygonj.c9users.io/submit" method="post" enctype="multipart/form-data">
+                <input type="file" name="file" />
+                <input type="submit" value="Submit" />
+            </form>
+            <footer class="credit">A <a href="https://www.freecodecamp.com" target="_blank">FreeCodeCamp</a> project by <a href="https://github.com/porygonj" target="_blank">Jonathan Doliver</a></footer>
+        </div>
     </body>
 </html>

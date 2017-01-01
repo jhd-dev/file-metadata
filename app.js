@@ -8,6 +8,11 @@ var upload = multer({
 var port = process.env.PORT || 8080;
 
 var app = express();
+
+app.get('/', function(req, res){
+    res.redirect('/upload');
+});
+
 app.use('/upload', express.static(path.join(__dirname, 'public')));
 
 app.post('/submit', [upload.single('file'), function(req, res){
